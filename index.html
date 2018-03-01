@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sad pong</title>
+  <style>
+    body, html {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: 0;
+      background-color: grey;
+    }
+    .gameboard {
+      width: 1000px;
+      height: 600px;
+      background-color: black;
+      margin: auto;
+      position: relative;
+    }
+    .score {
+      position: absolute;
+      top: 20px;
+      width: 60px;
+      height: 100px;
+      background-color: red;
+    }
+    .square {
+      background-color: white;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+    }
+    #left-score {
+      left: 250px;
+    }
+    #right-score {
+      right: 250px;
+    }
+    .paddle {
+      background-color: white;
+      width: 20px;
+      height: 100px;
+      position: absolute;
+    }
+    #left-paddle {
+      left: 40px;
+    }
+    #right-paddle {
+      right: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gameboard">
+    <div class='score' id='left-score'></div>
+    <div class='score' id='right-score'></div>
+    <div class="paddle" id="left-paddle"></div>
+    <div class="paddle" id="right-paddle"></div>
+    <div id="ball" class="square"></div>
+  </div>
+  <script src="numbers.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
