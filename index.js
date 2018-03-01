@@ -12,7 +12,7 @@ var $leftPaddle = document.getElementById('left-paddle');
 var $rightPaddle = document.getElementById('right-paddle');
 var $ball = document.getElementById('ball');
 
-var gridSquareWidth = 20;
+var gridSquareWidth = 40;
 
 function buildScoreGrid(grid, $el) {
   for (var i = 0; i < 5; i++) {
